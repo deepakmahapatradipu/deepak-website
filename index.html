@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Deepak Mahapatra | Portfolio</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f3f3f3;}
+
+header{
+background:linear-gradient(45deg,#0066ff,#00c3ff);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+header img{
+width:160px;
+height:160px;
+border-radius:50%;
+border:5px solid white;
+object-fit:cover;
+}
+
+.typing{
+font-size:40px;
+font-weight:bold;
+margin-top:10px;
+}
+
+section{
+max-width:900px;
+margin:auto;
+background:white;
+padding:40px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2{color:#0066ff;}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:15px;
+}
+
+.gallery img{
+width:100%;
+border-radius:10px;
+}
+
+.buttons a{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+border-radius:6px;
+text-decoration:none;
+color:white;
+}
+
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.facebook{background:#1877F2;}
+.linkedin{background:#0A66C2;}
+.threads{background:black;}
+.twitter{background:black;}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<img src="photo.jpg">
+
+<div class="typing" id="name"></div>
+
+<p>Welcome to My Official Website</p>
+
+</header>
+
+<section>
+
+<h2>About Me</h2>
+<p>Hello! I am Deepak Mahapatra from India. This is my personal portfolio website.</p>
+
+</section>
+
+<section>
+
+<h2>My Skills</h2>
+
+<ul>
+<li>Computer Knowledge</li>
+<li>Internet Skills</li>
+<li>Web Learning</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Photo Gallery</h2>
+
+<div class="gallery">
+<img src="photo.jpg">
+<img src="photo.jpg">
+<img src="photo.jpg">
+</div>
+
+</section>
+
+<section>
+
+<h2>Contact & Social Media</h2>
+
+<div class="buttons">
+
+<a class="whatsapp" href="https://wa.me/919437811749">WhatsApp</a>
+
+<a class="instagram" href="https://www.instagram.com/_deepak_mahapatra_">Instagram</a>
+
+<a class="facebook" href="https://www.facebook.com/share/1CdfWLLv8L/">Facebook</a>
+
+<a class="linkedin" href="https://www.linkedin.com/in/deepak-mahapatra-52a090237">LinkedIn</a>
+
+<a class="threads" href="https://www.threads.com/@_deepak_mahapatra_">Threads</a>
+
+<a class="twitter" href="https://x.com/MahapatraDipu">X</a>
+
+</div>
+
+<p>Email: dpk9437811749@gmail.com</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Deepak Mahapatra</p>
+
+</footer>
+
+<script>
+
+let text="Deepak Mahapatra";
+let i=0;
+
+function typing(){
+if(i<text.length){
+document.getElementById("name").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,100);
+}
+}
+
+typing();
+
+</script>
+
+</body>
+</html>
